@@ -1,0 +1,103 @@
+.tableRWD{
+    display:table;	/* Defines a Table */
+    font-size:1em;
+    color:#3a3a3a;
+    width: 100%;
+}
+
+.table-headRWD{
+    display: table-header-group; /* Defines a table header group */
+}
+
+.table-headRWD .columnRWD{ /* Column inside the table-head */
+    background: lighten($color: $primary-color, $amount: 45);
+    color:black;
+    border-width: 0.01em;
+    border-color: $primary-color;
+    border-style: solid;
+    font-weight: 600;
+}
+
+.rowRWD {
+    display:table-row; /* Defines a table row */
+}
+.columnRWD{
+    display:table-cell; /* Defines a table cell */
+    padding: 5px;
+    border-width: 0.01em;
+    border-color: $primary-color;
+    border-style: solid;
+    //border:1px solid $primary-color;
+    background:white;
+    text-align: center;
+ 
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*
+**********************************************
+RESPONIVE
+**********************************************
+*/
+
+@media all and (max-width: 640px){
+    .tableRWD,
+    .rowRWD,
+    .columnRWD,
+    .columnRWD:before{
+        display:block;	/* Converts a table, table row, table column and table column:before into a block element */
+    }
+  
+
+    .rowRWD .columnRWD:nth-child(1){ /* First column in a row */
+        border-width: 0.01em;
+        border-color: $primary-color;
+        border-style: solid;
+      text-align: left !important;
+  }
+    .table-headRWD{
+        position:absolute;	/* Hides table head but not using display none */
+        top:-1000em;
+        left:-1000em;
+    }
+  
+  .rowHeader {
+    background: lighten($color: $primary-color, $amount: 45);
+    color: black;
+    font-weight: bold;
+  }
+  
+    .rowRWD{
+        border-width: 0.01em;
+        border-color: $primary-color;
+        border-style: solid;
+        margin:20px 0;
+    }
+}
+
+.html__code{
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid $primary-color;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+    z-index: -100;
+}
+.html_useful-links-devider{
+    border-bottom: 1px solid lightgray;
+    z-index: -100;
+}

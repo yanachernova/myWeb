@@ -1,0 +1,21 @@
+@import './settings';
+
+
+//views
+@import './views/main';
+@import './views/htmlcssjs';
+@import './views/github';
+
+
+//components
+@import './components/navbar';
+
+
+//general
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap');
+
+body{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+}
