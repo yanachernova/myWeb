@@ -28,7 +28,7 @@ export const data =
    "cssUsefullLinkOne": "https://www.w3schools.com/css/default.asp",
    "cssUsefullLinkTwo": "https://developer.mozilla.org/en-US/docs/Web/CSS",
    "cssUsefullLinkThree": "https://github.com/Codeme-Cursos/c1__html__css",
-   "cssTablePropertyTitle": "Los properties más utilizadas",
+   "cssTablePropertyTitle": "Las propiedades más utilizadas",
    "jsUsefullLinkOne": "https://www.w3schools.com/js/default.asp",
    "jsUsefullLinkTwo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
    "jsUsefullLinkThree": "https://github.com/Codeme-Cursos/c1__html__css__javascript",
@@ -133,199 +133,187 @@ export const cssSelectorsTableData = [
    {
       "selector": ".class",
       "examlpe": ".intro",
-      "description": 'Selects all elements with class="intro"'
+      "description": 'Selecciona todos los tags con class="intro"'
    },{
       "selector": ".class1.class2 ",
       "examlpe": ".name1.name2 ",
-      "description": 'Selects all elements with both name1 and name2 set within its class attribute'
+      "description": 'Selecciona todos los tags con class="name1 name2"'
    },{
       "selector": ".class1 .class2",
       "examlpe": ".name1 .name2",
-      "description": 'Selects all elements with name2 that is a descendant of an element with name1'
+      "description": 'Selecciona todos los tags que class="name2" que sean descendientes de class="name1"'
    },{
       "selector": "#id",
       "examlpe": "#firstname",
-      "description": 'Selects the element with id="firstname"'
+      "description": 'Selecciona el tag con id="firstname"'
    },{
       "selector": "*",
       "examlpe": "*",
-      "description": 'Selects all elements'
+      "description": 'Selecciona todos los tags del proyecto'
    },{
-      "selector": "element",
+      "selector": "tag",
       "examlpe": "p",
-      "description": 'Selects all <p> elements'
+      "description": 'Selecciona todos los tags <p>'
    },{
       "selector": "element.class",
       "examlpe": "p.intro",
-      "description": 'Selects all <p> elements with class="intro"'
+      "description": 'Selecciona todos los tags <p> con class="intro"'
    },{
       "selector": "element,element",
       "examlpe": "div, p",
-      "description": 'Selects all <div> elements and all <p> elements'
+      "description": 'Selecciona todos los tags <div> y <p>'
    },{
       "selector": "element element",
       "examlpe": "div p",
-      "description": 'Selects all <p> elements inside <div> elements'
+      "description": 'Selecciona todos los tags <p> que existan dentro de div <div>'
    },{
       "selector": " element>element",
       "examlpe": "div > p",
-      "description": '	Selects all <p> elements where the parent is a <div> element'
+      "description": 'Selecciona todos los tags <p> que sean directamente descendientes de un <div>'
    },{
       "selector": "element+element",
       "examlpe": "div + p",
-      "description": ' Selects the first <p> element that are placed immediately after <div> elements'
+      "description": 'Selecciona el primer tag <p> ubicado inmediatamente después de un <div>'
    },{
       "selector": "[attribute]",
       "examlpe": "[target]",
-      "description": '	Selects all elements with a target attribute'
+      "description": 'Selecciona todos los tags que tengan el atributo "target"'
    },{
       "selector": "[attribute=value]",
       "examlpe": "[target=_blank]",
-      "description": 'Selects all elements with target="_blank"'
+      "description": 'Selecciona todos los tags con el atributo target="_blank"'
    },{
       "selector": ":active",
       "examlpe": "a:active",
-      "description": 'Selects the active link'
+      "description": 'Selecciona todos los links activos'
    },{
       "selector": "::after",
       "examlpe": "p::after",
-      "description": 'Insert something after the content of each <p> element'
+      "description": 'Inserta algo después de cada tag <p>'
    },{
       "selector": "::before",
       "examlpe": "	p::before",
-      "description": '	Insert something before the content of each <p> element'
+      "description": 'Inserta algo antes de cada tag <p>'
    },{
       "selector": " :checked",
       "examlpe": " input:checked",
-      "description": ' 	Selects every checked <input> element'
+      "description": 'Selecciona todos los tags <input> checkeados'
    },{
       "selector": ":first-child",
       "examlpe": "p:first-child",
-      "description": '	Selects every <p> element that is the first child of its parent'
+      "description": 'Selecciona todos los tags <p> que sean el primer hijo del tag padre'
    },{
       "selector": " :focus",
       "examlpe": "	input:focus ",
-      "description": '	Selects the input element which has focus '
+      "description": 'Selecciona todos los inputs que esten seleccionados o focalizados'
    },{
       "selector": " :hover",
       "examlpe": " 	a:hover",
-      "description": ' Selects links on mouse over'
+      "description": 'Selecciona los links con que tengan el cursor del mouse sobre ellos'
    },{
       "selector": " :last-child",
       "examlpe": "p:last-child ",
-      "description": 'Selects every <p> element that is the last <p> element of its parent '
+      "description": 'Selecciona todos los tags <p> que sean el último hijo del tag padre'
    }
 ]
 
 export const cssPropertyTableData = [
    {
-      "property": "align-content: center | flex-start | flex-end | space-between | space-around | stretch | initial | inherit",
-      "description": "Specifies the alignment of flexible container's items within the flex container.",  
+      "property": "display: block | inline | inline-block | flex | initial | inherit",
+      "description": "Define el alineamiento de los elementos.",  
    },{
       "property": "align-items: baseline | center | flex-start | flex-end | stretch | initial | inherit",
-      "description": "Specifies the default alignment for items within the flex container.",  
+      "description": "Define la distribución de los elementos dentro de un contenedor flex, el efecto dependerá de la dirección de contenedor flex (vertical flex-direction: row; y horizontal flex-direction: column;).", 
    },{
       "property": "align-self: auto | baseline | center | flex-start | flex-end | stretch | initial | inherit ",
-      "description": " Specifies the alignment for selected items within the flex container.",  
+      "description": "Auto define la distribución del elemento que se encuentre dentro de un contener flex.",  
    },{
       "property": " animation: 	[ name duration timing-function delay iteration-count direction fill-mode play-state ] | initial | inherit",
-      "description": "	Specifies the keyframe-based animations. ",  
+      "description": "Define una animación.",  
    },{
       "property": " background: 	[ image position/size repeat attachment origin clip color ] | initial | inherit",
-      "description": " 	Defines a variety of background properties within one declaration.",  
+      "description": "Define una serie de propiedades del fondo.",  
    },{
       "property": "background-color: 	color | transparent | initial | inherit",
-      "description": " 	Defines an element's background color.",  
+      "description": "Define el color de fondo.",  
    },{
       "property": " background-image: 	url | none | initial | inherit",
-      "description": " 	Defines an element's background image.",  
+      "description": "Define el fondo como una imagen, se utiliza definiendo la url de la imagen con url('ruta/dela/imagen').",  
    },{
       "property": "background-position: [ percentage | length | left | center | right ]1 or 2 values | initial | inherit",
-      "description": " Defines the origin of a background image. ",  
+      "description": "Define la posición de la imagen de fondo.",  
    },{
       "property": " background-repeat: repeat | repeat-x | repeat-y | no-repeat | initial | inherit",
-      "description": " Specify whether/how the background image is tiled.",  
+      "description": "Especifica la forma en que se repetirá la imagen de fondo.",  
    },{
       "property": " border: 	[ border-width border-style border-color ] | initial | inherit",
-      "description": " 	Sets the width, style, and color for all four sides of an element's border.",  
-   },{
-      "property": "border-bottom: [ border-bottom-width border-bottom-style border-bottom-color ] | initial | inherit ",
-      "description": "	Sets the width, style, and color of the bottom border of an element. ",  
+      "description": "Define el grosor, estilo y color del borde.",  
    },{
       "property": "border-radius: value",
-      "description": "	Defines the shape of the border corners of an element. ",  
+      "description": "Define la curvatura de las esquinas.",  
    },{
       "property": "color: 	color | initial | inherit",
-      "description": "	Specify the color of the text of an element. ",  
+      "description": "Define el color del texto.",  
    },{
       "property": " flex: [ flex-grow flex-shrink flex-basis ] | none | auto | initial | inherit",
-      "description": "	Specifies the components of a flexible length.",  
+      "description": "Define la distribución proporcional de los elementos dentro de una contenerdor flex.",  
    },{
       "property": "font-family: [ family-name | generic-family ] [, family-name | generic-family ]one or more pairs | initial | inherit ",
-      "description": "	Defines a list of fonts for element. ",  
+      "description": "Define la familia de la fuente de texto.",  
    },{
       "property": "font-size: xx-small | x-small | small | medium | large | x-large | xx-large | smaller | larger | length | percentage | initial | inherit ",
-      "description": " 	Defines the font size for the text.",  
+      "description": "Define el tamaño de la fuente de texto.",  
    },{
       "property": "font-weight: normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | initial | inherit ",
-      "description": "Specify the font weight of the text. ",  
+      "description": "Define el grosor de la fuente de texto.",  
    },{
       "property": " height: 	length | percentage | auto | initial | inherit",
-      "description": " 	Specify the height of an element.",  
+      "description": "Define el alto de un contenedor.",  
    },{
       "property": "justify-content: flex-start | flex-end | center | space-between | space-around | initial | inherit",
-      "description": "Specifies how flex items are aligned along the main axis of the flex container after any flexible lengths and auto margins have been resolved. ",  
+      "description": "Define la distribución de los elementos dentro de un contenedor flex, el efecto dependerá de la dirección de contenedor flex (horizontal flex-direction: row; y vertical flex-direction: column;).",  
    },{
       "property": " margin: 	[ length | percentage | auto ] 1 to 4 values | initial | inherit",
-      "description": " 	Sets the margin on all four sides of the element.",  
-   },{
-      "property": " margin-top(-left, -right, -bottom): 	length | percentage | auto | initial | inherit",
-      "description": "Sets the top or left, or right, or bottom margin of the element. ",  
+      "description": "Define el margen (espacio entre el borde hacia afuera) de un contenedor.",  
    },{
       "property": "  padding: 	[ length | percentage] 1 to 4 values | initial | inherit",
-      "description": " Sets the padding on all four sides of the element.",  
-   },{
-      "property": "padding-bottom(-left, -right, -top): 	length | percentage | initial | inherit",
-      "description": "	Sets the padding to the bottom or to the top, or to the right, or left side of an element. ",  
+      "description": "Define el padding (espacio entre el borde hacia adentro) de un contenedor.",  
    },{
       "property": " position: 	static | relative | absolute | fixed | sticky | initial | inherit",
-      "description": "	Specifies how an element is positioned. ",  
+      "description": "Define el posicionamiento de un contenedor.",  
    },{
       "property": " text-align: 	left | right | center | justify | initial | inherit",
-      "description": "	Sets the horizontal alignment of inline content. ",  
-   },{
-      "property": " vertical-align: baseline | sub | super | top | text-top | middle | bottom | text-bottom | length | percentage | initial | inherit",
-      "description": " 	Sets the vertical positioning of an element relative to the current text baseline.",  
+      "description": "Define el alineamiento del texto",  
    },{
       "property": " width: 	length | percentage | auto | initial | inherit",
-      "description": " Specify the width of an element.",  
+      "description": "Define el ancho de un contenedor",  
    },{
       "property": "z-index:  integer | auto | initial | inherit",
-      "description": "	Specifies a layering or stacking order for positioned elements. ",  
+      "description": "Especifica la posición de un contenedor en el eje z.",  
    }
 ]
 
 export const jsTableData = [
    {
-      "example": "var length = 16",
+      "example": "let length = 16",
       "description": "Number"
    },{
-      "example": 'var lastName = "Johnson"',
+      "example": 'let lastName = "Johnson"',
       "description": "String"
    },{
-      "example": 'var x = {firstName:"John", lastName:"Doe"}',
+      "example": 'let x = {firstName:"John", lastName:"Doe"}',
       "description": "Object"
    },{
-      "example": 'var cars = ["Saab", "Volvo", "BMW"]',
-      "description": "array"
+      "example": 'let cars = ["Saab", "Volvo", "BMW"]',
+      "description": "Array"
    },{
-      "example": 'var names = [{firstName:"John", lastName:"Doe"}]',
-      "description": "array of objects" 
+      "example": 'let names = [{firstName:"John", lastName:"Doe"}]',
+      "description": "Array of objects" 
    },{
-      "example": "var x = 5, var y = 5, (x == y)",
+      "example": "let x = 5, let y = 5, (x == y)",
       "description": "Returns true"
    },{
-      "example": "var x = 5, var z = 6, (x == z)",
+      "example": "let x = 5, let z = 6, (x == z)",
       "description": "Returns false"
    }
 ]
